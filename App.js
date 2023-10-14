@@ -1,6 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, SafeAreaView, View } from "react-native";
 import SwipeCardsScreen from "./SwipeCards";
+// import * as NavigationBar from 'expo-navigation-bar';
+
 
 export default function App() {
 
@@ -16,5 +18,7 @@ export default function App() {
       </SafeAreaView>
       <StatusBar style="auto" />
     </SafeAreaView>
+    
+
   );
 }

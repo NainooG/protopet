@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Button } from "react-native";
 import SwipeCards from "react-native-swipe-cards";
-import Card from "./Card";
+import Card from "./components/Card";
 import { useState } from "react";
 
 export const animals = [
@@ -23,8 +23,6 @@ const SwipeCardsScreen= () => {
   const handleReset = (card) => { 
     
   }
-
-  const [currentIndex, setCurrentIndex] = useState(0); 
 
   
   return (

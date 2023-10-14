@@ -1,14 +1,11 @@
-import React from 'react'; 
-import { Text, StyleSheet, StatusBar} from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context';
-
-const Tab = createBottomTabNavigator();
-
-function MyTabs() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
-    </Tab.Navigator>
-  );
+import React from 'react'
+import { View, Text } from 'react-native'
+function Home() {
+    return (
+    <View style={{alignItems:'center', justifyContent:'center', flex:1}}>
+    <Text>Home Screen</Text>
+    </View>
+    )
 }
+export default Home
+
