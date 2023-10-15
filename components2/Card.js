@@ -19,7 +19,7 @@ const handleShelterButton = () => {
           className="p-4 bg-blue-500 rounded-full mt-2 items-center justify-center py-3 w-[200px]"
         >
           <Text className="text-white">
-            Shelter
+            Shelter Link
           </Text>
         </TouchableOpacity>
       </SafeAreaView>
