@@ -1,24 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView, View } from "react-native";
-import SwipeCardsScreen from "./SwipeCards";
-// import * as NavigationBar from 'expo-navigation-bar';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import LikesScreen from './components2/LikesScreen';
+import HomeScreen from './components2/HomeScreen';
 
+const Tab = createBottomTabNavigator();
 
-export default function App() {
-
+const App = () => {
   return (
-    <SafeAreaView className="flex-1 bg-slate-500">
-      <SafeAreaView className="items-center">
-        <Text className="text-white font-bold text-3xl"> Protopet </Text>
-      </SafeAreaView>
-      <SafeAreaView className="flex-1 justify-center items-center">
-        <SwipeCardsScreen 
-          
-        />
-      </SafeAreaView>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-    
-
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Likes" component={LikesScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
